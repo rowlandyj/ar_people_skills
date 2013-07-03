@@ -11,6 +11,5 @@ class User < ActiveRecord::Base
     user = self.skill_users.where(skill_id: skill.id).first
     user.update_attributes(proficiency: value)
   end
-
-            
+ 
 end
